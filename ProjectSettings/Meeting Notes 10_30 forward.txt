@@ -1,0 +1,19 @@
+#Mendonca
+Working on displaying dosages on the syringe and when added to the heart
+Mendonca demo a success! talks afterwards include laying out the concept of pulling data to the foreground in a different viewer once data record stops with options to pan and view the graph with labels/save and export data for later processing
+Syringe "hard to handle"
+Linda is concerned we have not seen other scenarios for other drugs, we talked a good bit of how those will be created based on what we have
+Goals: week of Nov. 14 have two drug interactions so class can demo in afternoon labels/save
+	Main priority of working on saving, exporting data
+
+#VR Empathy (& Audiology)
+Goals: Audiology Scenario 1 by middle Nov., Scenario 2 by end of semester
+Assignments: Sruthi - Button? Rohith - ? Sajith - ?
+
+11-13 Meeting:
+#Mendonca
+We need to reverse the high-low transition already programmed into the application so that we can implement other drug effects
+Nikshep and Chocks will handle this^ and creating a GUI to visualize the data output of the app
+
+#VR Empathy
+Need to work on first scene, second scene still waiting on assets
