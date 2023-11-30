@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameStartMenu : MonoBehaviour
 {
@@ -12,10 +13,14 @@ public class GameStartMenu : MonoBehaviour
     public GameObject conditionChoice;
 
     [Header("Main Menu Buttons")]
-    public Button startButton;
+    public Button conditionChoiceButton;
     public Button tutorialButton;
     public Button aboutButton;
     //public Button quitButton; No quit button
+
+    [Header("Get Started Buttons")]
+    public TMP_Dropdown conditionDropdown;
+    public Button startButton;
 
     public List<Button> returnButtons;
 
@@ -25,10 +30,11 @@ public class GameStartMenu : MonoBehaviour
         EnableMainMenu();
 
         //Hook events
-        startButton.onClick.AddListener(EnableConditionChoice);
+        conditionChoiceButton.onClick.AddListener(EnableConditionChoice);
         tutorialButton.onClick.AddListener(EnableTutorial);
         aboutButton.onClick.AddListener(EnableAbout);
         //quitButton.onClick.AddListener(QuitGame);
+        startButton.onClick.AddListener(StartGame);
 
         foreach (var item in returnButtons)
         {
@@ -44,7 +50,18 @@ public class GameStartMenu : MonoBehaviour
     public void StartGame()
     {
         HideAll();
-        SceneTransitionManager.singleton.GoToSceneAsync(1);
+        switch (conditionDropdown.value)
+        {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                SceneTransitionManager.singleton.GoToSceneAsync(1);
+                break;
+            default:
+                break;
+        }
     }
 
     public void HideAll()
