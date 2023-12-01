@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -23,6 +24,7 @@ public class WristMenuBehaviour : MonoBehaviour
     void Start()
     {
         playPauseText = playPauseButton.GetComponentInChildren<TMP_Text>(true);
+        //hook events
         playPauseButton.onClick.AddListener(playPause);
         homeButton.onClick.AddListener(goHome);
         doneButton.onClick.AddListener(nextScene);
@@ -53,11 +55,11 @@ public class WristMenuBehaviour : MonoBehaviour
 
     public void goHome()
     {
-        //go to scene 0
+        SceneTransitionManager.singleton.GoToSceneAsync(0);
     }
 
     public void nextScene() 
     {
-        //go to scene +=1
+        SceneTransitionManager.singleton.GoToSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
