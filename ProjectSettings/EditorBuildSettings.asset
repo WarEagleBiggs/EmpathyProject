@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Main Menu.unity
+    path: Assets/Scenes/Main Menu.unity
     guid: da56b7f930c99644692831bc38c4ae7f
   - enabled: 1
-    path: Assets/Game.unity
+    path: Assets/Scenes/Game.unity
     guid: 1537155d75f5f8142be363ac6fd03a39
+  - enabled: 1
+    path: Assets/Scenes/Hearing Aid Cleaning.unity
+    guid: 80f8be9d6e1af8e4c9d810df6b9ac751
   - enabled: 0
     path: Assets/Samples/XR Interaction Toolkit/2.5.2/Hands Interaction Demo/HandsDemoScene.unity
     guid: 3ff35cecbcc52cc42945cf531638a60a
