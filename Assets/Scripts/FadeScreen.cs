@@ -15,6 +15,7 @@ public class FadeScreen : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
+        
         rend.enabled = false;
 
         if (fadeOnStart)
