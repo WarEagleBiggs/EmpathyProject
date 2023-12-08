@@ -17,3 +17,10 @@ Nikshep and Chocks will handle this^ and creating a GUI to visualize the data ou
 
 #VR Empathy
 Need to work on first scene, second scene still waiting on assets
+
+12-04 Meeting:
+#Mendonca
+Work still being done on drug transition low-high, not planned to implement for this Friday
+Students raised concerns about inability to use touch controls to manipulate data recall (reverse side)
+
+#VR Empathy
